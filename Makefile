@@ -20,7 +20,7 @@ test: build
 			ValidationMethod=$(VALIDATION_METHOD)
 
 publish: build
-	aws s3 cp --acl public-read dist/aws-ecr-public.template.json s3://monken/aws-ecr-public/v1.1.1/template.json
+	aws s3 cp --acl public-read dist/aws-ecr-public.template.json s3://dorkforces-dfl/aws-ecr-public/v0.1/template.json
 
 clean:
 	rm -rf dist
